@@ -5,13 +5,13 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    width: 60vw;
+    width: 70vw;
     padding: 12px 30px;
     border-radius: 8px;
 }
 
 .app-label {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     margin: 10px 0 20px 0;
 }
@@ -25,7 +25,8 @@ label{
 }
 
 input{
-    margin: 6px 0;
+    margin: 12px 0;
+    padding: 8px;
 }
 
 .btn{
