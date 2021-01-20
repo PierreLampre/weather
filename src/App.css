@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background-image: url("./img/app-bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,4 +15,5 @@ body {
     height: 100vh;
     display: grid;
     align-items: center;
+    justify-content: center;
 }

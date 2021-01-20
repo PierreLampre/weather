@@ -36,18 +36,31 @@ const ZipForm = () => {
     setPlaceholder("Enter Zip Code");
   }
 
+  const kelvinToFarenheit = (num) => {
+
+    let temp = (Math.floor(((num - 273) * 1.8) + 32));
+
+    return temp;
+  }
+
   return (
     <div>
       {weather ? (
         <section className="container">
-          <h1>We have weather!</h1>
-          <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather icon"/>
-          <button onClick={() => reset()}>Go Back</button>
+          <h3 className="weather-h3">Weather for {weather.name}</h3>
+          <div className="icon-box">
+            <img className="weather-icon" src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather icon"/>
+          </div>
+          <div className="description">{weather.weather[0].description}</div>
+          <div className="temp">Temperature: {kelvinToFarenheit(weather.main.temp)}</div>
+          <div className="feels-like">Feels Like: {kelvinToFarenheit(weather.main.feels_like)}</div>
+          <div className="feels-like">Low: {kelvinToFarenheit(weather.main.temp_min)}</div>
+          <div className="feels-like">High: {kelvinToFarenheit(weather.main.temp_max)}</div>
+          <button className="btn m-top" onClick={() => reset()}>Go Back</button>
         </section>
       ):(
       <section className="container">
         <h1 className="app-label">Get Me Weather</h1>
-        <div className="data"></div>
        
           <label>Zip Code</label>
           <input
@@ -58,8 +71,8 @@ const ZipForm = () => {
             onChange={e => setZipcode(e.target.value)}
           />
       
-
         <button
+          className="btn"
           variant="primary"
           type="button"
           onClick={() => fetchRequest()}

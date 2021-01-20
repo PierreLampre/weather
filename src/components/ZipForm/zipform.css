@@ -1,0 +1,76 @@
+/* Get Weather Styles */
+
+.container {
+    background: aliceblue;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+.app-label {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+label{
+    margin: 0;
+}
+
+input{
+    margin: 6px 0;
+}
+
+.btn{
+    width: 7em;
+    padding: 4px;
+    margin: 0 auto;
+    background: lightcoral;
+    border-radius: 6px;
+    transition: all ease .6s;
+}
+
+.m-top {
+    margin-top: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: tomato;
+    color: ghostwhite;
+    border-radius: 0;
+}
+
+/* Have...Gotten Weather Styles */
+
+.weather-h3{
+    margin-bottom: 8px;
+}
+
+.icon-box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
+    border-radius: 50%;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.weather-icon{
+    margin: 0 auto;
+}
+
+.description {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 4px 0 12px 0;
+}
+

@@ -1,5 +1,5 @@
-import "./app.css";
-import ZipForm from "./components/ZipForm";
+
+import ZipForm from "./components/ZipForm/ZipForm";
 import "./app.css"
 
 function App() {
